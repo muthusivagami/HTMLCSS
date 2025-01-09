@@ -1,0 +1,57 @@
+<style>
+    /*<!-- classn name should start with dot--> */
+   .subscribe_button {
+        background-color: red;
+        border: none; /*<!-- button border--> */
+        color: white;/*<!-- text colour--> */
+        height: 36px;
+        width:105px;
+        border-radius:2px; /*<!-- to set corner border--> */
+        cursor:pointer;
+        transition: opacity 0.15s; /*<!--for smooth transition(generally 0.15s is preferred) of opacity and how long it lasts--> */
+    }
+    .subscribe_button:hover{ /*<!-- add extra styles when we hover--> */
+        opacity:0.7;   /*<!--opacity takes the value between 0 and 1; opacity makes the element fade in--> */
+    }
+    .subscribe_button:active{/*<!-- add extra styles when we click--> */
+        opacity:0.3;
+    }
+    .join_button{
+        background-color: white;
+        color: rgb(16, 72, 226);
+        border-style:solid;
+        border-color: rgb(16, 72, 226);
+        height: 36px;
+        width: 105px;
+        border-radius:2px; /*<!-- to set corner border--> */
+        cursor:pointer;
+        transition: background-color 0.15s, color 0.15s /*<!-- two inputs for transition--> */
+    }
+    .join_button:hover{
+        background-color: blue;
+        color:white;
+    }
+    .join_button:active{
+        opacity:0.7;
+    }
+
+    .tweet_button{
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border:none;
+        height:36px;
+        width:105px;
+        border-radius:20px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor:pointer;
+        /*<!--shadows take four inputs, horizontal value, vertical value, blur value and colour rgba (0,0,0,0.15 -- 0.15 denotes a value)--> */
+         transition: box-shadow 0.15s;
+         }
+.tweet_button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);   
+}
+</style>
+<button class="subscribe_button">SUBSCRIBE</button>
+<button class="join_button">JOIN</button>
+<button class="tweet_button">Tweet</button>
